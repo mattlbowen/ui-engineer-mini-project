@@ -1,7 +1,22 @@
-<h1>The Rick and Morty</h1>
+<header class="header">
+  <h1 class="header__heading">The Rick and Morty</h1>
+</header>
 
-<a routerLink="/characters" [queryParams]="{ fromPage : characterPage, nameSearch : characterNameSearch }" class="nav-link">Characters</a>
-
-<a routerLink="/episodes" class="nav-link">Episode Guide</a>
+<nav class="nav">
+  <ul class="nav__list">
+    <li class="nav__listitem">
+      <a
+        routerLink="/characters"
+        [queryParams]="{
+          fromPage: characterPage,
+          nameSearch: characterNameSearch
+        }"
+        class="nav-link"
+        >Characters</a
+      >
+    </li>
+    <li class="nav__listitem"><a routerLink="/episodes" class="nav-link">Episode Guide</a></li>
+  </ul>
+</nav>
 
 <router-outlet></router-outlet>

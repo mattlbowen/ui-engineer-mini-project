@@ -1,0 +1,28 @@
+.header {
+    align-items: center;
+    background: #fff url('/assets/rick-morty.png') center bottom no-repeat;
+    display: flex;
+    height: 26.5rem;
+    justify-content: center;
+}
+
+.nav__list {
+    font-size: 3.2rem;    
+    line-height: 1;
+    list-style: none;
+    margin: 5.6rem 0 7.2rem;
+    padding: 0;
+}
+
+.nav__listitem {
+    display: inline-block;
+
+    &:first-child {
+        margin-right: 4.5rem;
+    }
+}
+
+.header__heading {
+    color: #292d34;
+  font-size: 6.4rem;
+}
